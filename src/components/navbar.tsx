@@ -19,7 +19,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-10 bg-gray-500 shadow-sm">
       <div className="container mx-auto px-4">
         <nav className="flex justify-between items-center h-16">
-          <Link href="/" className="text-xl font-bold text-black">
+          <Link href="/" className="text-3xl font-bold text-black">
             Rahul Gajbhiye
           </Link>
 
