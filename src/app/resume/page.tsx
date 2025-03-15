@@ -3,7 +3,7 @@
 export default function Resume() {
   return (
     <div className="container mx-auto py-20 px-70">
-      <div className="border-4 border-primary p-8 rounded-lg">
+      <div className="border-4 border-primary p-8 rounded-lg  bg-blue-100">
         <h1 className="text-4xl font-black mb-8 text-center">My Resume</h1>
 
         <section className="mb-10">

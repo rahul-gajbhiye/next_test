@@ -22,28 +22,26 @@ export default function Home() {
           <h2 className="text-xl font-bold mb-2">A Bit About Me</h2>
 
           <p className='text-justify'>
-            I build responsive web applications with modern technologies.
-            Passionate about user experience and clean code. I have a passion for creating intuitive, accessible web applications that deliver
-            exceptional user experiences. When I'm not coding, I enjoy gaming, badminton, and contributing to open source
-            projects. I'm currently working at OZ Sports, Nagpur.
-          </p>
+            I like to build responsive web applications with modern technologies,
+            with a strong focus on clean code and user experience. Passionate about creating intuitive and accessible web solutions, I strive to deliver seamless and engaging user interactions.
+            Beyond coding, I enjoy gaming, badminton, and cricket. I am always eager to learn and grow, I embrace new challenges and opportunities in the ever-evolving world of web development.          </p>
           <div className="flex gap-4 mt-4">
             <Link
               href="/resume"
               className="w-30 h-30 border font-bold border-primary text-primary rounded-full flex items-center justify-center hover:bg-opacity-90 transition bg-amber-200"
-              >
+            >
               View Resume
             </Link>
             <Link
               href="/projects"
               className="w-30 h-30 border font-bold border-primary text-primary rounded-full flex items-center justify-center hover:bg-opacity-90 transition bg-rose-200"
-              >
+            >
               My Projects
             </Link>
             <Link
               href="/contact"
               className="w-30 h-30 border font-bold border-primary text-primary rounded-full flex items-center justify-center hover:bg-opacity-90 transition bg-blue-200"
-              >
+            >
               Contact Me
             </Link>
           </div>
