@@ -33,7 +33,6 @@ export default function RootLayout({
           <main className="flex-grow">
             {children}
           </main>
-          {/* <hr className="border-black" /> */}
           <Footer />
         </div>      
         </body>

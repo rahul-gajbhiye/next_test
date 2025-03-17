@@ -5,30 +5,12 @@ import Image from 'next/image'
 const projects = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description: "A full-featured e-commerce platform built with Next.js and Stripe integration.",
-    image: "/projects/ecommerce.jpg",
-    tags: ["Next.js", "Stripe", "TailwindCSS", "MongoDB"],
-    github: "https://github.com",
-    live: "https://example.com"
-  },
-  {
-    id: 2,
-    title: "Task Management App",
-    description: "A drag-and-drop task management application with team collaboration features.",
-    image: "/projects/taskapp.jpg",
-    tags: ["React", "Firebase", "Redux", "Styled Components"],
-    github: "https://github.com",
-    live: "https://example.com"
-  },
-  {
-    id: 3,
-    title: "Weather Dashboard",
-    description: "A weather dashboard that displays current and forecasted weather data from multiple APIs.",
-    image: "/projects/weather.jpg",
-    tags: ["JavaScript", "OpenWeather API", "Chart.js", "CSS Grid"],
-    github: "https://github.com",
-    live: "https://example.com"
+    title: "react-calculator",
+    description: "A simple calculator app built for quick and accurate calculations. A user-friendly calculator with a sleek interface and smooth functionality.",
+    image: "/calculator.jpg",
+    tags: ["react.js", "TailwindCSS"],
+    github: "https://github.com/rahul-gajbhiye/react-calculator",
+    try: "https://rahul-gajbhiye.github.io/react-calculator/"
   }
 ]
 
@@ -49,7 +31,7 @@ export default function Projects() {
               />
             </div>
             
-            <div className="p-6">
+            <div className="p-6 bg-blue-100">
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
               <p className="mb-4">{project.description}</p>
               
@@ -71,12 +53,12 @@ export default function Projects() {
                   Github Code
                 </a>
                 <a 
-                  href={project.live} 
+                  href={project.try} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-primary hover:underline"
                 >
-                  Link for Live Demo
+                  Live Demo
                 </a>
               </div>
             </div>
