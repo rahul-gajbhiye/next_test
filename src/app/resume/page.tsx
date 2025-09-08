@@ -88,6 +88,9 @@ export default function Resume() {
           <div className="mb-4">
             <h3 className="text-xl font-semibold">Phone</h3>
             <p className="text-primary">+91-9096458038</p>
+            <a href="/my_resume.png" download>
+              <button>Download Resume</button>
+            </a>
           </div>
         </section>
       </div >
