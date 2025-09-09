@@ -1,3 +1,4 @@
+import { FaDownload } from "react-icons/fa";
 
 // File: app/resume/page.js
 export default function Resume() {
@@ -85,13 +86,46 @@ export default function Resume() {
             <h3 className="text-xl font-semibold">Location</h3>
             <p className="text-primary">Nagpur, India</p>
           </div>
-          <div className="mb-4">
-            <h3 className="text-xl font-semibold">Phone</h3>
-            <p className="text-primary">+91-9096458038</p>
-            <a href="/my_resume.png" download>
-              <button>Download Resume</button>
-            </a>
+
+
+          <div className="flex items-center justify-between mb-4">
+            <div>
+              <h3 className="text-xl font-semibold">Phone</h3>
+              <p className="text-primary">+91-9096458038</p>
+            </div>
+
+            <div>
+              <a
+                href="/my_resume.png"
+                download
+                className="flex items-center gap-2 bg-blue-800 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-md transition-all"
+              >
+                <FaDownload className="text-lg" />
+                <span>Download</span>
+              </a>
+            </div>
           </div>
+
+          {/* <div className="flex justify-between">
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold">Phone</h3>
+              <p className="text-primary">+91-9096458038</p>
+            </div>
+            <div className="mb-4">
+              <a href="/my_resume.png" download>
+                <button>
+                  <div>
+                    <div className="flex justify-center">
+                      <FaDownload className="text-xl" />
+                    </div>
+                    <div>
+                      Download
+                    </div>
+                  </div>
+                </button>
+              </a>
+            </div>
+          </div> */}
         </section>
       </div >
     </div >
