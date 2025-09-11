@@ -5,14 +5,7 @@ export default function Resume() {
   return (
     <div className="container mx-auto py-20 px-70">
       <div className="border-4 border-primary p-8 rounded-lg  bg-blue-100">
-        <iframe 
-    src="/my_resume.png" 
-    width="100%" 
-    height="300px">
-</iframe>
-
-        
-        {/* <h1 className="text-4xl font-black mb-8 text-center">My Resume</h1>
+        <h1 className="text-4xl font-black mb-8 text-center">My Resume</h1>
 
         <section className="mb-10">
           <h2 className="text-2xl font-bold section-heading">Work Experience:</h2>
@@ -112,7 +105,7 @@ export default function Resume() {
               </a>
             </div>
           </div>
-        </section>*/}
+        </section>
       </div > 
     </div >
   )
