@@ -24,26 +24,6 @@ export default function Resume() {
   </a>
       </div>
     </div>
-
-
-
-
-
-
-//     <div className="py-5 flex items-center justify-center relative">
-//   <iframe
-//     src="/Rahul.jpg"
-//     width="60%"
-//     height="800px"
-//     style={{ border: "none" }}
-//     title="My Resume"
-//   />
-
-//   {/* Download button fixed to bottom-right */}
-  
-// </div>
-
-
   )
 }
 

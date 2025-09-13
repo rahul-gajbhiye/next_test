@@ -21,20 +21,6 @@ export async function POST(req: Request) {
       },
     });
 
-    //  // Email details
-    // const mailOptions = {
-    //   from: `"${name}" <${email}>`,
-    //   to: process.env.EMAIL_TO,
-    //   subject: "Portfolio Resume Inquiry",
-    //   html: `
-    //     <h2>Resume inquiry message</h2>
-    //     <p><strong>Name:</strong> ${name}</p>
-    //     <p><strong>Email:</strong> ${email}</p>
-    //     <p><strong>Message:</strong></p>
-    //     <p>${message}</p>
-    //   `,
-    // };
-
    // Email details
     const mailOptions = {
       from: `"${name}" <${process.env.EMAIL_USER}>`, // Sender shown as the user's name
