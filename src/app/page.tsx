@@ -1,12 +1,11 @@
-
-// File: app/page.js
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="container mx-auto px-20 py-12">
+    <div className="container mx-auto md:p-15 xl:p-40 flex items-center justify-center">
       <section className="flex flex-col md:flex-row items-center justify-center gap-8">
+        <div className='flex items-center justify-center gap-8'>
         <div className="md:w-[30%] relative">
           <div className="aspect-square relative overflow-hidden rounded-full border-4 border-primary">
             <Image
@@ -45,6 +44,7 @@ export default function Home() {
               Contact Me
             </Link>
           </div>
+        </div>
         </div>
       </section>
       {/* <section className="mb-16">

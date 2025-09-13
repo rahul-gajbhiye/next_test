@@ -20,19 +20,31 @@ export default function Contact() {
   }
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+  e.preventDefault();
+  setIsSubmitting(true);
+  setSubmitStatus(null);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500))
+  try {
+    const res = await fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
 
-    setIsSubmitting(false)
-    setSubmitStatus('success')
-    setFormData({ name: '', email: '', message: '' })
-
-    // Reset status after 5 seconds
-    setTimeout(() => setSubmitStatus(null), 5000)
+    if (res.ok) {
+      setSubmitStatus("success");
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      setSubmitStatus("error");
+    }
+  } catch (error) {
+    console.error(error);
+    setSubmitStatus("error");
   }
+
+  setIsSubmitting(false);
+};
+
 
   return (
     <div className="container mx-auto px-4 py-12  flex justify-center">
